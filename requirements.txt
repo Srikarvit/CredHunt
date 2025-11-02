@@ -1,0 +1,11 @@
+# Core
+rich
+colorama
+jinja2
+requests
+tqdm
+python-magic-bin
+
+# Optional / features
+GitPython    # optional: git history scanning (requires git binary)
+pdfkit       # optional: HTML -> PDF (requires wkhtmltopdf external binary)

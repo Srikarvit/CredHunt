@@ -1,0 +1,40 @@
+<head>
+<meta charset="UTF-8">
+<title>CredHunt Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #007BFF; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<h1>Credential Scan Report</h1>
+<table>
+<tr><th>File</th><th>Type</th><th>Snippet</th><th>Hash</th></tr>
+
+<tr>
+<td>test_data\config.py</td>
+<td>AWS Access Key</td>
+<td>AKIAIOSFODNN7EXAMPLE</td>
+<td>1a5d44a2dca19669d72edf4c4f1c27c4c1ca4b4408fbb17f6ce4ad452d78ddb3</td>
+</tr>
+
+<tr>
+<td>test_data\config.py</td>
+<td>Password String</td>
+<td>password = "mySecret123"</td>
+<td>3421f653163ddbc9107c4c514f50e461e8e09ad0445e1c19948dc957b3a0a344</td>
+</tr>
+
+<tr>
+<td>test_data\keys.env</td>
+<td>Possible API Key</td>
+<td>wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</td>
+<td>78314b11be2e581549ac1c4f616563fad3fdf0c3b71678f6e2299182080e0598</td>
+</tr>
+
+</table>
+</body>
+</html>
