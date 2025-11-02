@@ -31,26 +31,30 @@ Results are hashed and redacted
 Add new regex rules easily in scanner.py
 Ready for CI integration and enterprise use cases
 
-🧩 Project Structure
+### 🧩 Project Structure
+
+```
 CredHunt/
 │
-├── credhunt.py                # Main runner script
+├── credhunt.py              # Main runner script
+│
 ├── core/
-│   ├── scanner.py             # Main scanning logic
-│   └── utils.py               # Helper functions (hashing, etc.)
+│   ├── scanner.py           # Main scanning logic
+│   └── utils.py             # Helper functions (hashing, etc.)
 │
 ├── reports/
-│   ├── report.html            # Auto-generated report
-│   └── report.pdf             # Optional PDF output
+│   ├── report.html          # Auto-generated HTML report
+│   └── report.pdf           # Optional PDF output
 │
 ├── templates/
-│   └── report_template.html   # HTML report structure
+│   └── report_template.html # HTML report structure
 │
 ├── test_data/
-│   ├── config.py              # Sample data for testing
-│   └── keys.env
+│   ├── config.py            # Sample data for testing
+│   └── keys.env             # Example .env file with credentials
 │
-└── requirements.txt
+└── requirements.txt         # Python dependencies
+```
 
 ⚙️ Installation
 1️⃣ Create a Virtual Environment
@@ -59,7 +63,6 @@ python -m venv credHunt-venv
 
 2️⃣ Install Dependencies
 pip install -r requirements.txt
-
 
 Typical requirements.txt: 
 pdfkit
@@ -76,7 +79,6 @@ config = pdfkit.configuration(wkhtmltopdf=path)
 python credhunt.py
 When prompted, enter a folder path, e.g.:
 Enter path to scan: C:\Users\Srikar\Desktop\projects\test_data
-
 
 Output:
 report.html → Saved inside /reports
